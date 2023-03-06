@@ -7,7 +7,7 @@ function DishCategoryCard(props) {
 
         {/* Dish Image */}
         <div className='max-w-[70px] max-h-[70px] lg:max-w-[100px] lg:max-h-[100px] rounded-full border bg-white mx-auto lg:mt-10 mt-7'>
-            <Image src={props.img} className='border rounded-full'/>
+            <Image src={props.img} alt="dish_category" className='border rounded-full'/>
         </div>
 
         <p className='font-Poppins text-center mt-3 lg:text-lg'>{props.title}</p>

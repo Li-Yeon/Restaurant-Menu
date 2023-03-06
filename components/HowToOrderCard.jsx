@@ -6,7 +6,7 @@ function HowToOrderCard(props) {
         <div className='h-[250px] w-[150px] flex flex-col'>
 
             <div className="w-[80px] h-[80px] mx-auto mt-3">
-                <Image src={props.img} />
+                <Image src={props.img} alt="how_to_image"/>
             </div>
 
             <div className='border-dotted rounded-full border-2 mx-auto border-yellow-400 mt-5'>

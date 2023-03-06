@@ -18,7 +18,7 @@ function HowToOrderArrow(props) {
 
     return (
         <div className='h-[100px] w-[100px] rotate-90 lg:rotate-0'>
-            <Image src={arrow_variant}/>
+            <Image src={arrow_variant} alt="arrow_image"/>
         </div>
     )
 }

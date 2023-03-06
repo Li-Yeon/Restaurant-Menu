@@ -32,6 +32,11 @@ import trail_arrow_2 from '../public/trail_arrow_2.png'
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Li-Yeon | Restaurant Menu</title>
+        <link rel="shortcut icon" href='favicon.ico' />
+      </Head>
+
       <div>
         <Layout>
 
@@ -41,7 +46,7 @@ export default function Home() {
             <div className="flex items-center lg:justify-around lg:flex-row flex-col">
               <div className="flex flex-col gap-2">
                 <p className='font-Poppins lg:text-6xl text-xl font-bold text-zinc-800 lg:max-w-[500px]'>We Provide Delivery Within 30 Min</p>
-                <p className='font-Poppins lg:text-xl text-md font-[300] text-zinc-500 lg:max-w-[500px] mt-3'>Imagine you don't need a diet because we provide healthy and delicious food for you!</p>
+                <p className='font-Poppins lg:text-xl text-md font-[300] text-zinc-500 lg:max-w-[500px] mt-3'>Imagine you don&apos;t need a diet because we provide healthy and delicious food for you!</p>
 
                 <div className="flex mt-5 relative">
                   <input type="text" className='border border-zinc-400 rounded-full py-4 font-Poppins px-5 w-full' placeholder='Enter Zip Code' />
@@ -97,13 +102,13 @@ export default function Home() {
               <p className='font-Poppins font-[300] mt-5 text-sm lg:text-lg text-slate-400 mx-auto text-center'>Follow the steps</p>
 
               <div className="flex justify-center mt-5 lg:flex-row flex-col items-center">
-                <HowToOrderCard img={location} title="01" body="Choose your location"/>
-                <HowToOrderArrow variant={0}/>
-                <HowToOrderCard img={restaurant} title="02" body="Choose restaurant"/>
-                <HowToOrderArrow variant={1}/>
-                <HowToOrderCard img={cart} title="03" body="Make your order"/>
-                <HowToOrderArrow variant={0}/>
-                <HowToOrderCard img={motor} title="04" body="Food is on your way"/>
+                <HowToOrderCard img={location} title="01" body="Choose your location" />
+                <HowToOrderArrow variant={0} />
+                <HowToOrderCard img={restaurant} title="02" body="Choose restaurant" />
+                <HowToOrderArrow variant={1} />
+                <HowToOrderCard img={cart} title="03" body="Make your order" />
+                <HowToOrderArrow variant={0} />
+                <HowToOrderCard img={motor} title="04" body="Food is on your way" />
               </div>
 
             </div>
