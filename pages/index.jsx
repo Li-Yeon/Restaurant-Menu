@@ -7,8 +7,11 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 // Components
 import DishCategoryCard from '../components/DishCategoryCard';
+import HowToOrderCard from '../components/HowToOrderCard';
+import HowToOrderArrow from '../components/HowToOrderArrow';
 
 // Assets
+// Dishes Category //
 import banner_image from '../public/banner_image.png'
 import dish_sushi from '../public/DishCategory/sushi.png'
 import dish_pizza from '../public/DishCategory/pizza.png'
@@ -16,6 +19,15 @@ import dish_burger from '../public/DishCategory/Burger.png'
 import dish_dessert from '../public/DishCategory/Dessert.png'
 import dish_salad from '../public/DishCategory/Salad.png'
 import dish_pasta from '../public/DishCategory/Pasta.png'
+// How To Order //
+import location from '../public/location.png'
+import restaurant from '../public/restaurant.png'
+import cart from '../public/cart.png'
+import motor from '../public/motor.png'
+import trail_arrow_1 from '../public/trail_arrow_1.png'
+import trail_arrow_2 from '../public/trail_arrow_2.png'
+
+
 
 export default function Home() {
   return (
@@ -84,15 +96,14 @@ export default function Home() {
               <p className='font-Poppins font-bold text-lg lg:text-4xl text-zinc-700 mx-auto max-w-[500px] text-center'>How to Order?</p>
               <p className='font-Poppins font-[300] mt-5 text-sm lg:text-lg text-slate-400 mx-auto text-center'>Follow the steps</p>
 
-              <div className="flex justify-center">
-                <div className="flex overflow-auto flex-nowrap gap-6 lg:px-10 py-5 justify-center pl-24">
-                  <DishCategoryCard title="SUSHI" img={dish_sushi} />
-                  <DishCategoryCard title="PIZZA" img={dish_pizza} />
-                  <DishCategoryCard title="BURGER" img={dish_burger} />
-                  <DishCategoryCard title="DESSERT" img={dish_dessert} />
-                  <DishCategoryCard title="SALAD" img={dish_salad} />
-                  <DishCategoryCard title="PASTA" img={dish_pasta} />
-                </div>
+              <div className="flex justify-center mt-5 lg:flex-row flex-col items-center">
+                <HowToOrderCard img={location} title="01" body="Choose your location"/>
+                <HowToOrderArrow variant={0}/>
+                <HowToOrderCard img={restaurant} title="02" body="Choose restaurant"/>
+                <HowToOrderArrow variant={1}/>
+                <HowToOrderCard img={cart} title="03" body="Make your order"/>
+                <HowToOrderArrow variant={0}/>
+                <HowToOrderCard img={motor} title="04" body="Food is on your way"/>
               </div>
 
             </div>
