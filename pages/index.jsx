@@ -13,8 +13,8 @@ import HowToOrderArrow from '../components/HowToOrderArrow';
 // Assets
 // Dishes Category //
 import banner_image from '../public/banner_image.png'
-import dish_sushi from '../public/DishCategory/sushi.png'
-import dish_pizza from '../public/DishCategory/pizza.png'
+import dish_sushi from '../public/DishCategory/Sushi.png'
+import dish_pizza from '../public/DishCategory/Pizza.png'
 import dish_burger from '../public/DishCategory/Burger.png'
 import dish_dessert from '../public/DishCategory/Dessert.png'
 import dish_salad from '../public/DishCategory/Salad.png'
