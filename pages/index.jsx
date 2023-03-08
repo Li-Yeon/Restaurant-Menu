@@ -15,6 +15,7 @@ import PopularDishCard from '../components/PopularDishCard';
 // Assets
 import banner_image from '../public/banner_image.png'
 import chef_image from '../public/chef.png'
+import iphone_image from '../public/iphone.png'
 
 // Dishes Category //
 import dish_sushi from '../public/DishCategory/Sushi.png'
@@ -28,10 +29,9 @@ import location from '../public/location.png'
 import restaurant from '../public/restaurant.png'
 import cart from '../public/cart.png'
 import motor from '../public/motor.png'
-import trail_arrow_1 from '../public/trail_arrow_1.png'
-import trail_arrow_2 from '../public/trail_arrow_2.png'
-
-
+// Mobile Store
+import apple_store from '../public/apple_store.png'
+import play_store from '../public/play_store.png'
 
 export default function Home() {
   return (
@@ -129,11 +129,11 @@ export default function Home() {
               <div className="flex lg:justify-center justify-start">
                 <div className="flex overflow-auto flex-nowrap lg:overflow-hidden lg:flex-wrap gap-6 lg:gap-10 lg:px-10 py-5 justify-start lg:justify-center">
                   <PopularDishCard title="Stewed cabbage with sauce" price="$5.90" img={dish_sushi} />
-                  <PopularDishCard title="Puree soup with turkey pieces" price="$5.90" img={dish_pizza} />
-                  <PopularDishCard title="Chicken with vegetables" price="$5.90" img={dish_burger} />
-                  <PopularDishCard title="Traditional Greek salad" price="$5.90" img={dish_dessert} />
-                  <PopularDishCard title="Three-Meat Special Lasagna" price="$5.90" img={dish_salad} />
-                  <PopularDishCard title="Veggie Tagliatelle Bolognese" price="$5.90" img={dish_pasta} />
+                  <PopularDishCard title="Puree soup with turkey pieces" price="$7.55" img={dish_pizza} />
+                  <PopularDishCard title="Chicken with vegetables" price="$3.39" img={dish_burger} />
+                  <PopularDishCard title="Traditional Greek salad" price="$4.99" img={dish_dessert} />
+                  <PopularDishCard title="Three-Meat Special Lasagna" price="$5.10" img={dish_salad} />
+                  <PopularDishCard title="Veggie Tagliatelle Bolognese" price="$4.80" img={dish_pasta} />
                 </div>
               </div>
 
@@ -201,8 +201,62 @@ export default function Home() {
 
                   </div>
 
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          {/* Chef Banner */}
+          <div className='lg:mt-[10rem] mt-5 transition-all' id="landing">
+
+            <div className="flex items-center lg:justify-around lg:flex-row flex-col-reverse">
+
+              <div className="flex flex-col gap-2">
+                <p className='font-Poppins lg:text-4xl text-lg font-semibold text-zinc-800 lg:max-w-[500px]'>Make The Delicious Food and Order Our App</p>
+                <p className='font-Poppins lg:text-lg text-md font-[300] text-zinc-500 lg:max-w-[500px] mt-3'>
+                  Download our app now and get the best promos and deals for a limited time offer!
+                </p>
+
+                <div className="flex mt-5 flex-col gap-3 items-start">
+
+                  <div className="flex items-center gap-3">
+
+                    <div className='border-dotted rounded-full border-2 mx-auto border-yellow-400'>
+                      <p className='text-center px-2 py-1 font-Poppins text-orange-400 text-lg'>01</p>
+                    </div>
+
+                    <p className='font-Poppins text-zinc-600 text-md max-w-[200px]'>Follow Delivery Status</p>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+
+                    <div className='border-dotted rounded-full border-2 mx-auto border-yellow-400'>
+                      <p className='text-center px-2 py-1 font-Poppins text-orange-400 text-lg'>02</p>
+                    </div>
+
+                    <p className='font-Poppins text-zinc-600 text-md max-w-[200px]'>Order From Any Location</p>
+                  </div>
 
                 </div>
+
+                <div className="flex gap-5 mt-5 items-center">
+
+                  <a className='w-[120px] max-h-[73px] cursor-pointer'>
+                    <Image src={apple_store} />
+                  </a>
+
+                  <a className='w-[130px] max-h-[73px] cursor-pointer'>
+                    <Image src={play_store} />
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div className="lg:h-[400px] lg:w-[400px] min-h-[200px] min-w-[200px] mx-auto mt-10 lg:mt-0 lg:mx-0">
+                <Image src={iphone_image} alt="iphone_image" />
               </div>
 
 
@@ -210,9 +264,11 @@ export default function Home() {
 
           </div>
 
-
-
         </Layout>
+
+        <div className="footer">
+          
+        </div>
       </div>
     </>
   )
