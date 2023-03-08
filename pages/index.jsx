@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 // Layout
 import Layout from '../components/Layout'
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill, BsArrowRight } from "react-icons/bs";
 
 // Components
 import DishCategoryCard from '../components/DishCategoryCard';
@@ -13,8 +13,10 @@ import PopularDishCard from '../components/PopularDishCard';
 
 
 // Assets
-// Dishes Category //
 import banner_image from '../public/banner_image.png'
+import chef_image from '../public/chef.png'
+
+// Dishes Category //
 import dish_sushi from '../public/DishCategory/Sushi.png'
 import dish_pizza from '../public/DishCategory/Pizza.png'
 import dish_burger from '../public/DishCategory/Burger.png'
@@ -141,6 +143,68 @@ export default function Home() {
                   <BsArrowRightCircleFill className='text-white text-lg' />
                 </div>
               </button>
+
+            </div>
+
+          </div>
+
+          {/* Chef Banner */}
+          <div className='lg:mt-[10rem] mt-5 transition-all' id="landing">
+
+            <div className="flex items-center lg:justify-around lg:flex-row flex-col">
+
+              <div className="lg:h-[400px] lg:w-[400px] min-h-[200px] min-w-[200px] mx-auto mt-10 lg:mt-0 lg:mx-0 -scale-x-100">
+                <Image src={chef_image} alt="chef_image" />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <p className='font-Poppins lg:text-4xl text-lg font-semibold text-zinc-800 lg:max-w-[500px]'>Delicious and healthy food for your body</p>
+                <p className='font-Poppins lg:text-lg text-md font-[300] text-zinc-500 lg:max-w-[500px] mt-3'>
+                  Our company is engaged in the delivery of healthy and tasty food around the city. Special cooking and delivery technologies allow you to buy fresh and healthy food.
+                </p>
+
+                <div className="flex mt-5 flex-wrap gap-5 max-w-[600px] items-center">
+
+                  <div className="flex items-center gap-3">
+                    <BsArrowRight />
+                    <p className='font-Poppins text-zinc-600 text-md max-w-[200px]'>Order a nutritionist consultation</p>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <BsArrowRight />
+                    <p className='font-Poppins text-zinc-600 text-md max-w-[200px]'>Order healthy food express delivery</p>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <BsArrowRight />
+                    <p className='font-Poppins text-zinc-600 text-md max-w-[200px]'>Tariff plans on an ongoing basis</p>
+                  </div>
+
+                  <div className="flex items-center gap-3">
+                    <BsArrowRight />
+                    <p className='font-Poppins text-zinc-600 text-md max-w-[200px]'>Offers for special clients</p>
+                  </div>
+
+                  <div className="flex gap-5">
+
+                    <button className='bg-gradient-to-b from-blue-400 to-blue-500 rounded-full hover:scale-105'>
+                      <div className="flex items-center gap-2 px-6 py-2">
+                        <p className='font-Poppins text-white text-center text-sm'>CHOOSE A DIET</p>
+                      </div>
+                    </button>
+
+                    <button className='bg-white border-blue-500 border rounded-full hover:scale-105'>
+                      <div className="flex items-center gap-2 px-6 py-2">
+                        <p className='font-Poppinstext-center text-sm font-semibold text-blue-500'>WHAT&apos;S NEW</p>
+                      </div>
+                    </button>
+
+                  </div>
+
+
+                </div>
+              </div>
+
 
             </div>
 
