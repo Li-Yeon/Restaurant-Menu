@@ -9,6 +9,8 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import DishCategoryCard from '../components/DishCategoryCard';
 import HowToOrderCard from '../components/HowToOrderCard';
 import HowToOrderArrow from '../components/HowToOrderArrow';
+import PopularDishCard from '../components/PopularDishCard';
+
 
 // Assets
 // Dishes Category //
@@ -110,6 +112,35 @@ export default function Home() {
                 <HowToOrderArrow variant={0} />
                 <HowToOrderCard img={motor} title="04" body="Food is on your way" />
               </div>
+
+            </div>
+
+          </div>
+
+          {/* Popular Dishes Category */}
+          <div className='lg:mt-[12rem] mt-28 relative' id="dish-category">
+
+            <div className="flex flex-col">
+              <p className='font-Poppins font-bold text-lg lg:text-4xl text-zinc-700 mx-auto max-w-[700px] text-center'>Popular dishes with delivery</p>
+              <p className='font-Poppins font-[300] mt-5 text-sm lg:text-lg text-slate-400 mx-auto text-center max-w-[600px]'>The most delicious and healthy dishes from our chefs. You can order this meal separately or as part of a meal plan.</p>
+
+              <div className="flex lg:justify-center justify-start">
+                <div className="flex overflow-auto flex-nowrap lg:overflow-hidden lg:flex-wrap gap-6 lg:gap-10 lg:px-10 py-5 justify-start lg:justify-center">
+                  <PopularDishCard title="Stewed cabbage with sauce" price="$5.90" img={dish_sushi} />
+                  <PopularDishCard title="Puree soup with turkey pieces" price="$5.90" img={dish_pizza} />
+                  <PopularDishCard title="Chicken with vegetables" price="$5.90" img={dish_burger} />
+                  <PopularDishCard title="Traditional Greek salad" price="$5.90" img={dish_dessert} />
+                  <PopularDishCard title="Three-Meat Special Lasagna" price="$5.90" img={dish_salad} />
+                  <PopularDishCard title="Veggie Tagliatelle Bolognese" price="$5.90" img={dish_pasta} />
+                </div>
+              </div>
+
+              <button className='bg-gradient-to-b from-blue-400 to-blue-500 rounded-full w-[160px] mx-auto hover:scale-105'>
+                <div className="flex items-center gap-2 px-4 py-2">
+                  <p className='font-Poppins text-white '>See all Menu</p>
+                  <BsArrowRightCircleFill className='text-white text-lg' />
+                </div>
+              </button>
 
             </div>
 

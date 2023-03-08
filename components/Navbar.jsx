@@ -8,7 +8,7 @@ function Navbar({ children }) {
 
     return (
         <>
-            <div className='fixed w-full top-0 z-10 border-b bg-white'>
+            <div className='fixed w-full top-0 z-10 border-b bg-white lg:border-none'>
                 <nav className='flex lg:h-24 items-start lg:items-center lg:mx-28 lg:flex-row flex-col'>
 
                     <div className="flex items-center h-16 w-full lg:w-auto lg:mx-0 lg:h-auto px-5">
