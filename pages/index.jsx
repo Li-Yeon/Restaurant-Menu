@@ -10,12 +10,14 @@ import DishCategoryCard from '../components/DishCategoryCard';
 import HowToOrderCard from '../components/HowToOrderCard';
 import HowToOrderArrow from '../components/HowToOrderArrow';
 import PopularDishCard from '../components/PopularDishCard';
+import TestimonialCard from '../components/TestimonialCard';
 
 
 // Assets
 import banner_image from '../public/banner_image.png'
 import chef_image from '../public/chef.png'
 import iphone_image from '../public/iphone.png'
+import testimonial_image from '../public/testimonial.png'
 
 // Dishes Category //
 import dish_sushi from '../public/DishCategory/Sushi.png'
@@ -29,9 +31,16 @@ import location from '../public/location.png'
 import restaurant from '../public/restaurant.png'
 import cart from '../public/cart.png'
 import motor from '../public/motor.png'
-// Mobile Store
+// Mobile Store //
 import apple_store from '../public/apple_store.png'
 import play_store from '../public/play_store.png'
+// Testimonial // 
+import smile_emoji from '../public/smile_emoji.png'
+import hearteyes_emoji from '../public/hearteyes_emoji.png'
+import confetti_emoji from '../public/confetti_emoji.png'
+
+
+
 
 export default function Home() {
   return (
@@ -208,7 +217,7 @@ export default function Home() {
 
           </div>
 
-          {/* Chef Banner */}
+          {/* App Banner */}
           <div className='lg:mt-[10rem] mt-5 transition-all' id="landing">
 
             <div className="flex items-center lg:justify-around lg:flex-row flex-col-reverse">
@@ -244,11 +253,11 @@ export default function Home() {
                 <div className="flex gap-5 mt-5 items-center">
 
                   <a className='w-[120px] max-h-[73px] cursor-pointer'>
-                    <Image src={apple_store} />
+                    <Image src={apple_store} alt="apple_image"/>
                   </a>
 
                   <a className='w-[130px] max-h-[73px] cursor-pointer'>
-                    <Image src={play_store} />
+                    <Image src={play_store} alt="android_image"/>
                   </a>
 
                 </div>
@@ -264,10 +273,59 @@ export default function Home() {
 
           </div>
 
+          {/* Testimonial Banner */}
+          <div className='lg:mt-[10rem] mt-5 transition-all relative' id="landing">
+
+            <div className="flex items-center lg:justify-around lg:flex-row flex-col">
+
+              <div className="lg:h-[400px] lg:w-[400px] min-h-[200px] min-w-[200px] mx-auto mt-10 lg:mt-0 lg:mx-0 -scale-x-100">
+                <Image src={testimonial_image} alt="testimonial_image" />
+              </div>
+
+              <div className="absolute w-[180px] h-[100px] bg-white shadow-md backdrop-blur-sm bg-opacity-60 rounded-xl lg:left-[400px] lg:bottom-0 top-[350px]">
+
+                <div className="flex flex-col">
+                  <p className='font-Poppins text-zinc-800 mt-5 text-center text-sm'>Our Satisfied User</p>
+
+                  <div className="flex justify-center mt-2 relative">
+                    <div style={{ position: "absolute", left: "30px", top: "0" }}>
+                      <Image src={smile_emoji} width={40} height={40} alt="emoji" />
+                    </div>
+                    <div style={{ position: "absolute", left: "60px", top: "0px" }}>
+                      <Image src={hearteyes_emoji} width={40} height={40} alt="emoji" />
+                    </div>
+                    <div style={{ position: "absolute", left: "90px", top: "0" }}>
+                      <div className='min-w-[40px] min-h-[40px] rounded-full bg-white backdrop-blur-sm flex items-center bg-opacity-25 border border-gray-100 p-1 shadow-sm'>
+                        <p className='font-Poppins text-center text-zinc-800 text-xs'>+25k</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <p className='font-Poppins lg:text-4xl text-lg font-semibold text-zinc-800 lg:max-w-[500px] mt-10 lg:mt-0'>What Our clients say about us</p>
+                <p className='font-Poppins lg:text-lg text-md font-[300] text-zinc-500 lg:max-w-[600px] mt-3'>
+                  I am grateful to the company for the timely and exceptionally accurate delivery of food. Everything is very tasty and high quality. And it follows that the weight loss plan I have chosen really works! I was surprised.
+                </p>
+
+                <div className="flex mt-5 flex-wrap gap-5 max-w-[600px] items-center">
+
+                  <TestimonialCard img={confetti_emoji} title='Seona Palmsmith' company='Dixon Corp' stars={3} />
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
         </Layout>
 
         <div className="footer">
-          
+
         </div>
       </div>
     </>
