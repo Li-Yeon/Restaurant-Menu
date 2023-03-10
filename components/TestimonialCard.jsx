@@ -17,7 +17,7 @@ function TestimonialCard(props) {
     }
 
     return (
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center gap-3 transition-all hover:scale-105 cursor-pointer'>
             <div className='rounded-full items-center flex p-3 bg-blue-500'>
                 <Image src={props.img} className='' width={50} height={50} alt="emoji"/>
             </div>

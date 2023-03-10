@@ -11,7 +11,7 @@ import HowToOrderCard from '../components/HowToOrderCard';
 import HowToOrderArrow from '../components/HowToOrderArrow';
 import PopularDishCard from '../components/PopularDishCard';
 import TestimonialCard from '../components/TestimonialCard';
-
+import ArticlesCard from '../components/ArticlesCard';
 
 // Assets
 import banner_image from '../public/banner_image.png'
@@ -38,7 +38,10 @@ import play_store from '../public/play_store.png'
 import smile_emoji from '../public/smile_emoji.png'
 import hearteyes_emoji from '../public/hearteyes_emoji.png'
 import confetti_emoji from '../public/confetti_emoji.png'
-
+// Articles //
+import article_1 from '../public/article_1.png';
+import article_2 from '../public/article_2.png';
+import article_3 from '../public/article_3.png';
 
 
 
@@ -253,11 +256,11 @@ export default function Home() {
                 <div className="flex gap-5 mt-5 items-center">
 
                   <a className='w-[120px] max-h-[73px] cursor-pointer'>
-                    <Image src={apple_store} alt="apple_image"/>
+                    <Image src={apple_store} alt="apple_image" />
                   </a>
 
                   <a className='w-[130px] max-h-[73px] cursor-pointer'>
-                    <Image src={play_store} alt="android_image"/>
+                    <Image src={play_store} alt="android_image" />
                   </a>
 
                 </div>
@@ -282,7 +285,7 @@ export default function Home() {
                 <Image src={testimonial_image} alt="testimonial_image" />
               </div>
 
-              <div className="absolute w-[180px] h-[100px] bg-white shadow-md backdrop-blur-sm bg-opacity-60 rounded-xl lg:left-[400px] lg:bottom-0 top-[350px]">
+              <div className="absolute w-[180px] h-[100px] bg-white shadow-md backdrop-blur-sm bg-opacity-60 rounded-xl lg:left-[400px] lg:bottom-0 top-[350px] hover:scale-105 cursor-pointer">
 
                 <div className="flex flex-col">
                   <p className='font-Poppins text-zinc-800 mt-5 text-center text-sm'>Our Satisfied User</p>
@@ -317,6 +320,32 @@ export default function Home() {
 
                 </div>
               </div>
+
+            </div>
+
+          </div>
+
+          {/* Articles Section */}
+          <div className='lg:mt-[12rem] mt-28 relative' id="dish-category">
+
+            <div className="flex flex-col">
+              <p className='font-Poppins font-bold text-lg lg:text-4xl text-zinc-700 mx-auto max-w-[700px] text-center'>Articles and useful tips</p>
+              <p className='font-Poppins font-[300] mt-5 text-sm lg:text-lg text-slate-400 mx-auto text-center max-w-[800px]'>Read on for useful information about tasty and healthy food. Interesting events and recipes. New meat plans and specialized diets for weight loss or gain.</p>
+
+              <div className="flex lg:justify-center justify-start">
+                <div className="flex overflow-auto flex-nowrap lg:overflow-hidden lg:flex-wrap gap-6 lg:gap-10 lg:px-10 py-5 justify-start lg:justify-center">
+                  <ArticlesCard title="New seafood recipe perfect for losing weight" body="Mass communication has led to modern marketing strategies to continue focusing on brand awareness." img={article_1} />
+                  <ArticlesCard title="Balance of proteins, fats and carbo. How do I get it?" body="Mass communication has let to modern marketing strategies to continue focusing on brand awareness." img={article_2} />
+                  <ArticlesCard title="The importance of proper and healthy eating." body="Large distribution and heavy promotions. The fast-paced environment of digital payment service." img={article_3} />
+                </div>
+              </div>
+
+              <button className='bg-gradient-to-b from-blue-400 to-blue-500 rounded-full w-[120px] mx-auto hover:scale-105 mt-2'>
+                <div className="flex items-center gap-2 px-4 py-2">
+                  <p className='font-Poppins text-white '>See all</p>
+                  <BsArrowRightCircleFill className='text-white text-lg' />
+                </div>
+              </button>
 
             </div>
 
