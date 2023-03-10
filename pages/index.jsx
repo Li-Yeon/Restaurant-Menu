@@ -353,9 +353,51 @@ export default function Home() {
 
         </Layout>
 
-        <div className="footer">
+        <div className="flex w-full relative lg:flex-row flex-col">
+
+          <div className='w-1/2 lg:block absolute left-0 border-r-[3.5px] border-dashed h-[350px] top-[40px] opacity-60 hidden' />
+
+          <div className="newsletter w-full lg:w-1/2 h-[350px] bg-blue-500 lg:mt-10 mt-5 flex flex-col justify-center">
+
+            <div className="mx-auto flex flex-col">
+              <p className='font-Poppins text-white font-semibold text-4xl max-w-[300px] mx-10 lg:mx-0'>Subscribe our newsletter</p>
+              <p className='font-Poppins text-gray-100 font-[300] text-sm text-left mt-2 max-w-[500px] mx-10 lg:mx-0'>Browse local restaurants and businesses for delivery by entering your address below.</p>
+
+              <div className="flex mt-5 relative mx-10 lg:mx-0">
+                <input type="text" className='border border-zinc-400 rounded-full py-4 font-Poppins px-5 w-full' placeholder='Enter your email address' />
+
+                <button className='absolute right-2 top-[5.5px] bg-gradient-to-b from-blue-400 to-blue-500 rounded-full px-4 py-3'>
+                  <div className="flex items-center gap-2">
+                    <p className='font-Poppins text-white '>Subscribe</p>
+                    <BsArrowRightCircleFill className='text-white text-lg' />
+                  </div>
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div className="newsletter w-full lg:w-1/2 h-[200px] lg:h-[350px] bg-blue-500 lg:mt-10 flex flex-col justify-center">
+
+            <div className="mx-auto flex flex-col">
+              <p className='font-Poppins text-white font-semibold text-4xl max-w-[300px]'>Ready to Order?</p>
+
+              <button className='bg-blue-700 rounded-full hover:scale-105 max-w-[150px] mx-auto mt-5'>
+
+                <div className="flex items-center gap-2 px-4 py-2 justify-center">
+                  <p className='font-Poppins text-white text-center text-lg'>Order Now</p>
+                </div>
+                
+              </button>
+
+            </div>
+
+          </div>
+
 
         </div>
+
       </div>
     </>
   )
